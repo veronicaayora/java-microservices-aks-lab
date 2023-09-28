@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-server
+data:
+  # property-like keys; each key maps to a simple value
+  CONFIG_SERVER_URL: "http://config-server:8888"
+  APPLICATIONINSIGHTS_CONNECTION_STRING: "Copy here the value of $AI_CONNECTIONSTRING"
